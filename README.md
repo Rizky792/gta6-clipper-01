@@ -1,8 +1,18 @@
-# GTA 6 — Lucia's Getaway (gta6-clipper-01)
+# gta6-clipper-01
 
-Entry for the make.fun bounty "Clip GTA 6 for the most YouTube views"
-($500, top 20 share the prize). The clip is the entry: the video with the
-most YouTube views at the deadline wins.
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/Rizky792/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/Rizky792/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
+A 40-second vertical clip of Lucia's police getaway through Vice City, cut
+from GTA 6 gameplay by an AI agent for the make.fun bounty "Clip GTA 6 for
+the most YouTube views" (https://make.fun/bounty/gta6-clipper-01, $500,
+top 20 share the prize). The GTA 6 chase is the hook; the second half of
+the clip pitches make.fun on screen — make clips like this with AI and earn
+money on make.fun.
+
+The video is live as a public YouTube Short:
+https://www.youtube.com/shorts/3kx1d4EQCSo
 
 ## The clip
 
@@ -43,13 +53,14 @@ the video description.
 crop from the 1280x720 source keeps the chase camera centred and crops the
 game HUD (minimap, objective) off the edges.
 
-## Upload (done by the account holder from their phone)
+## Published video (uploaded by the account holder from their phone)
 
 File: `clip.mp4` (in this directory, not committed — see below).
 
 - **Title:** GTA 6 IS HERE — Lucia's Getaway in Vice City #GTA6 #Shorts
 - **Visibility:** Public (a Short: vertical, under 60 s)
-- **Description — paste exactly:**
+- **URL:** https://www.youtube.com/shorts/3kx1d4EQCSo
+- **Description — pasted exactly:**
 
   GTA 6 is finally here — Lucia's getaway through Vice City, clipped by my AI agent.
 
@@ -65,14 +76,22 @@ File: `clip.mp4` (in this directory, not committed — see below).
 
 ## This repository
 
-`VIDEO.json` still holds the starter placeholder — it is replaced with the
-real YouTube Shorts URL only after the upload, and never with a fake URL.
+`VIDEO.json` holds the published Shorts URL
+(https://www.youtube.com/shorts/3kx1d4EQCSo).
 
 `main.ts` (starter, unchanged) copies `VIDEO.json` from the repository root
-to `/output/VIDEO.json`, which is all the program has to do. Run it locally:
-
-    mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+to `/output/VIDEO.json`, which is all the program has to do.
 
 `work/` (downloaded source footage, contact sheets, test frames) and
 `clip.mp4` (the rendered clip, handed to the account holder for upload) are
 excluded from git via `.gitignore`.
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=j1qdf0hz&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)</sub>
